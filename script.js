@@ -23,7 +23,11 @@ document.addEventListener('DOMContentLoaded', function() {
             if (data.success) {
                 userList.innerHTML = '';
                 fetchUsers();
-                form.reset();
+                nameInput.value = '';
+                emailInput.value = '';
+                phoneInput.value = '';
+                subjectInput.value = '';
+                messageInput.value = '';
             } else {
                 alert('Error al agregar usuario.');
             }
